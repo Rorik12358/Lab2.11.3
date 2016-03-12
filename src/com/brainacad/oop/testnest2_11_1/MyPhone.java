@@ -56,6 +56,15 @@ public class MyPhone {
         }
     }
 
+    public static class SimCard {
+    }
+
+    public static class PhoneBattery {
+    }
+
+    public static class PhoneCharger {
+    }
+
     public class MyPhoneBook {
         private int index = 0;
         private PhoneNumber[] phoneNumbers = new PhoneNumber[10];
@@ -97,6 +106,27 @@ public class MyPhone {
             };
             Arrays.sort(phoneNumbers, comparatorByPhoneNumber);
         }
+    }
+
+    /*
+        lab 2.11.4
+         inner non-static class - классы которые не могут существоввать без телефона (например дисплей является составной частью телефона)
+         inner non-static class - классы которые могут существоввать без телефона, но без него бесполлезны (например симкарта)
+         top-level class - отдельные класы
+     */
+    public class Camera {
+    }
+
+    public class Bluetooth {
+    }
+
+    public class TouchScreen {
+    }
+
+    public class PowerOnButton {
+    }
+
+    public class PhoneDisplay {
     }
 }
 
